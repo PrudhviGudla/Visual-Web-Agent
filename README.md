@@ -31,8 +31,8 @@ The agent follows a multi-stage workflow:
 
 1. **Clone the repository**
 ```
-git clone https://github.com/yourusername/medium-article-analyzer.git
-cd medium-article-analyzer
+git clone https://github.com/PrudhviGudla/Visual-Web-Agent
+cd Visual-Web-Agent
 ```
 
 2. **Install dependencies**
@@ -55,7 +55,7 @@ echo "GEMINI_API_KEY=your_gemini_api_key_here" > .env
 
 ### Command Line Arguments
 ```
-python medium_analyzer.py --link "ARTICLE_URL" --interests interest1 interest2 --scroll_count 3
+python vwa_medium.py --link "ARTICLE_URL" --interests interest1 interest2 --scroll_count 3
 ```
 
 ### Parameters
@@ -66,12 +66,12 @@ python medium_analyzer.py --link "ARTICLE_URL" --interests interest1 interest2 -
 
 ### Alternative JSON Configuration
 ```
-python medium_analyzer.py --config '{"link": "https://medium.com/@user/article", "interests": ["AI", "Python", "Technology"], "scroll_count": 5}'
+python vwa_medium.py --config '{"link": "https://medium.com/@user/article", "interests": ["AI", "Python", "Technology"], "scroll_count": 5}'
 ```
 
 ## Example
 ```
-python medium_analyzer.py
+python vwa_medium.py
 --link "https://medium.com/@itberrios6/introduction-to-point-net-d23f43aa87d2"
 --interests "AI" "Machine Learning" "Computer Vision"
 --scroll_count 4
