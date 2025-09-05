@@ -1,0 +1,6 @@
+langchain
+langgraph
+langchain-google-genai
+google-generativeai
+playwright
+python-dotenv
