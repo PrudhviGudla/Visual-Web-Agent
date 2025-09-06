@@ -4,18 +4,18 @@ It is a visual web automation agent that analyzes Medium articles using AI-power
 
 ## Features
 
-- ** Visual Web Automation**: Uses Playwright to navigate and capture screenshots of Medium articles
-- ** AI-Powered Analysis**: Leverages Google's Gemini 2.5 Flash model for intelligent content summarization
-- ** Multi-Stage Processing**: Implements LangGraph workflow for systematic article analysis
-- ** Popup Handling**: Automatically detects and closes Medium login popups during scrolling
-- ** Personalized Recommendations**: Provides YES/NO recommendations based on your specified interests
-- ** Clean Browser Management**: Opens fresh Chromium instance without affecting existing Chrome sessions
+- **Visual Web Automation**: Uses Playwright to navigate and capture screenshots of Medium articles
+- **AI-Powered Analysis**: Leverages Google's Gemini 2.5 Flash model for intelligent content summarization
+- **Multi-Stage Processing**: Implements LangGraph workflow for systematic article analysis
+- **Popup Handling**: Automatically detects and closes Medium login popups during scrolling
+- **Personalized Recommendations**: Provides YES/NO recommendations based on your specified interests
+- **Clean Browser Management**: Opens a fresh Chromium instance without affecting existing Chrome sessions
 
 ## Architecture
 
 The agent follows a multi-stage workflow:
 
-1. **Initialize** - Launch Chromium browser and navigate to article
+1. **Initialize** - Launch Chromium browser and navigate to the article
 2. **Screenshot** - Capture visual content of the current viewport
 3. **Summarize** - Use Gemini Vision to analyze and summarize screenshot content
 4. **Scroll Decision** - Intelligently decide whether to continue scrolling or aggregate results
